@@ -1,7 +1,26 @@
 body {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 100%;
+	display: inline-grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  align-content: center;
+}
+svg {
+  background: #eee;
+  width: 140px;
+  height: 140px;
+  margin: 3%;
+}
+.svg-0:hover path {
+  d: path("M5,5 L0,5")
+}
+.rect-spiral:hover path {
+  d: path("M50,50 l0,6 l6,0 l0,-12 l-12,0 l0,18 l18,0 l0,-24 l-24,0 l0,30 l30,0 l0,-36 l-36,0 l0,42 l42,0 l0,-48 l-48,0 l0,54 l54,0 l0,-60 l-60,0 l0,66 l66,0 l0,-72 l-72,0 l0,78 l78,0 l0,-84 l-84,0")
 }
 .svg-1:hover path {
   d: path("M8,2 L2,8");
@@ -30,12 +49,7 @@ body {
 .svg-9:hover path {
   d: path("M2,2 Q8,2 5,5 T8,8")
 }
-svg {
-  width: 30%;
-  height: 30%;
-  background: #eee;
-  margin-bottom: 5%;
-}
+
 svg polyline,
 svg line,
 svg path {
@@ -46,8 +60,5 @@ svg path {
   transition: 0.2s;
 }
 
-.container {
-	width: 40%;
-	height: 40%;
-}
+
 

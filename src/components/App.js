@@ -19,7 +19,9 @@ class App extends Component {
 	render () {
 		return (
 				<div>
+					<h3>SVG collection</h3>
 					<Svg1 />
+					<span>Collected or created by: Amitesh Ranjan</span>
 				</div>
 			)
 	}
